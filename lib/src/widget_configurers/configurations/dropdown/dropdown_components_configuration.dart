@@ -210,7 +210,7 @@ class DropdownSearchFieldComponent extends SearchFieldComponent {
         child: TextField(
           cursorColor: accentColor,
           controller: data.searchTextController,
-          style: Theme.of(data.context).textTheme.bodyText2,
+          style: Theme.of(data.context).textTheme.bodyMedium,
           expands: false,
           maxLines: 1,
           decoration: InputDecoration(
@@ -232,7 +232,7 @@ class DropdownSearchingIndicatorComponent extends SearchingIndicatorComponent {
 
   Widget _builder(SearchingIndicatorComponentData data) {
     double size = Theme.of(data.context).iconTheme.size ??
-        Theme.of(data.context).textTheme.bodyText2!.fontSize ??
+        Theme.of(data.context).textTheme.bodyMedium!.fontSize ??
         15;
     return Center(
       child: SizedBox(
