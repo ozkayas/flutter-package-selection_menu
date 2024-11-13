@@ -105,7 +105,7 @@ class DialogSearchFieldComponent extends SearchFieldComponent {
       expands: false,
       maxLines: 1,
       textAlignVertical: TextAlignVertical.center,
-      style: Theme.of(data.context).textTheme.bodyText2!.copyWith(),
+      style: Theme.of(data.context).textTheme.bodyMedium!.copyWith(),
       decoration: InputDecoration(
         border: InputBorder.none,
         hintText: "Search...",
@@ -124,7 +124,7 @@ class DialogSearchingIndicatorComponent extends SearchingIndicatorComponent {
 
   Widget _builder(SearchingIndicatorComponentData data) {
     double size = Theme.of(data.context).iconTheme.size ??
-        Theme.of(data.context).textTheme.bodyText2!.fontSize ??
+        Theme.of(data.context).textTheme.bodyMedium!.fontSize ??
         15;
     return Center(
       child: SizedBox(
